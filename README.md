@@ -9,6 +9,15 @@ Please be aware that we have 41k agents and so a run can take a while (1hour+ on
 We also save runs into pkl files for later use. You can rewrite this part in the last section if you need to. (Just add all custom pkl files you generated into the list)
 
 Hpyerparameters:
+	model_agents: Number of agents in the network (this is taken from the dataset)
+	active_df: Time-sorted edge network, currently not on use for this task
+	max_time: length of simulation in time-sorted sims, currently not in use
+	trust: This is a multiplier to strengthen opinions of people we corresponded with 
+	meeting_size: Size of meetings to build a new consensus for the agent
+	meeting_chance: Chance for a meeting to happen, this exists mainly to speed up the simulation
+	run_length: How many rounds we try to build consensus
+	UDG: undirected graph to gain neighbors we trust
+
 
 
 ## Installation
